@@ -1,51 +1,35 @@
- body {
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        text-align: center;
-        background-color: rgb(12, 12, 49);
-        margin:2% 5%; box-sizing: border-box;}                                                                                    
-img {margin-bottom:30px; margin-left: 1% }                                            
-#frame {position: static;
-        display: flex;
-        flex-direction: column;
-       text-align: center;justify-items: left;justify-content:space-between;
-       align-items: center;
-        margin-left: 0%;
-        margin-top: 0%; }
-.log2 { background-color: white;
-        padding: 20px 30px 15px 35px;
-         border-top-left-radius: 18px;
-          border-top-right-radius: 18px; border-bottom-right-radius: 18px; }
-.log3{padding-bottom: 0.1px; text-align:left;margin-bottom:0.1px; }
-.header {text-align: center;}                                               
+ body {font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-align: center;
+        background-color: rgb(12, 12, 49);margin:2% 5%; box-sizing: border-box;}                                                                                    
+img {margin-bottom:30px; margin-left: 1% }       
+                                /*CSS FOR LOGIN*/
+#frame {position: static;display: flex;flex-direction: column;text-align: center;align-items: center;}
+.log2 { background-color: white;padding: 20px 30px 15px 35px;border-top-left-radius: 18px;border-top-right-radius: 18px; border-bottom-right-radius: 18px; }
+.log3{padding-bottom: 0.1px; text-align:left;margin-bottom:0.1px;}                                      
 #footer {margin-top: 10px;padding-top: 0%;color: white;font-weight: lighter;font-size: medium;}
-#regframe {position:static;display: flex;
-           flex-direction: column;text-align: center;
-           justify-items: left;justify-content:space-between;
-           align-items: center;margin-left: 1%;padding-top: 0%; }
-#regheader{padding-top: 0;}
-.reg1{font-size: 20px;
-      background-color: white;padding:25px 0px 20px 2px;
-      border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; }
-.reg2{text-align: left;padding: 15px 35px 20px 35px;}
-#line1 {font-size: 27px;font-family:serif;font-weight:normal;margin-bottom: 0px;color:rgb(2, 31, 83);padding: 2px 5px 5px 5px;}
-#line2 {font-size:15px;font-family:serif;font-weight:300;color:rgba(2, 34, 83, 0.856);margin-top: 0;}
-#inside {margin-bottom: 0%;padding-left: 0%;justify-items: left;}
-#pwd, #reset {margin-top: 5px;
-         width: 250px;height: 30px;
-         border-radius:3px;background-color:whitesmoke;
-         border-color: whitesmoke;padding: 5px 10px;border-radius: 3px;border: none;}
-.midlog {font-size:12px;font-weight:lighter; font-family:Georgia}
-.logbutton {font-size: 14px;color:white;font-family: Arial;font-weight: bold;
-     text-align: center;background-color: rgb(108, 33, 179);
-      width: 275px; height: 37px;
+.midlog,.foglabel{font-size:12px;font-weight:lighter; font-family:Georgia;color:rgb(108, 39, 90)}
+.logbutton {font-size: 14px;color:white;font-family: Arial;font-weight: bold;text-align: center;background-color: rgb(108, 33, 179);width: 275px; height: 37px;
       margin-top: 0px;margin-bottom: 5px; border-top-left-radius: 5px;border: none;
       border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
-#fogframe{position: static;display: flex;
-   flex-direction: column;
-   align-items: center;margin-left: 1%;padding-top: 0%; }
-#fog1{font-size: 20px;
-   background-color: white;padding:10px 70px 50px 70px;
+#line1 {font-size: 22px;font-family:Verdana;font-weight:bold;color:rgb(2, 31, 83);padding: 2px 5px 5px 5px;}
+#line2 {font-size:15px;font-family:serif;font-weight:300;color:rgba(2, 34, 83, 0.856);margin-top: 0;}
+                                /*CSS FOR REGISTER */
+#regframe {position:static;display: flex;flex-direction: column;text-align: center;justify-items: left;justify-content:space-between;align-items: center;margin-left: 1%;padding-top: 0%; }
+.reg1{font-size: 20px;background-color: white;padding:25px 0px 20px 2px;border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; }
+.reg2{text-align: left;padding: 15px 35px 20px 35px;}
+#fullname, #email, #tel, #password,#code, #forgotmail {width: 280px;height: 32px;background-color:whitesmoke;padding: 5px 10px;border-radius: 3px;border: none;}
+select{width: 300px;height: 39px; background-color:whitesmoke;padding: 5px 10px;font-family: sans-serif;font-weight: lighter;font-size:13.5px;border: none;}
+label{font-size:12px;font-weight:lighter; font-family:Georgia;color:rgb(108, 39, 90)}
+.regbutton,.fogbutton {width: 310px;height: 35px;background-color: rgb(108, 33, 179);border: none;font-size: 13px;font:medium;font-family: Arial;font-weight: bold;color: white;text-align: center;
+          border-top-left-radius: 5px;border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
+#line3{font-size: 23px;font-family:Verdana;font-weight:bold;margin-bottom: 5px;color:rgb(2, 31, 83);padding: 2px 5px 5px 5px;}
+#line4 {font-size:14px;font-family:Times New Roman;font-weight:lighter;color:rgba(2, 34, 83, 0.856);margin-top: 0;}
+#pwd, #reset {margin-top: 5px;width: 250px;height: 30px;border-radius:3px;background-color:whitesmoke;border-color: whitesmoke;padding: 5px 10px;border-radius: 3px;border: none;}
+                                /* CSS FOR  FORGOTTEN */
+#fogframe{display: flex;flex-direction: column;align-items: center}
+   #line5 {font-size: 20px;font-family:Verdana;font-weight: bold;color:rgb(2, 31, 83);padding: 2px 5px 0px 5px;}
+   #line6 {font-size:15px;font-family:serif;font-weight:400;color:rgba(2, 34, 83, 0.856)}
+#fog1{font-size: 25px;background-color: white;padding:10px 20px 0px 20px;
    border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; }
-#fog2{text-align:left;;margin-bottom:0.1px;justify-items: left;padding-left: 0pt;}
-#fog3{}
+#foglabel{text-align: left;color:rgb(108, 33, 110)}
 #fogfooter{margin-top: 10px;padding-top: 0%;color: white;font-weight: lighter;font-size: medium}
+#forgotmail{margin-top: 5px;width: 285px;height: 30px;border-radius:3px;background-color:whitesmoke;padding: 5px 10px;border-radius: 3px;border: none;}
