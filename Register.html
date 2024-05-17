@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      input {width: 280px;height: 32px;background-color:whitesmoke; border-color: whitesmoke;padding: 5px 10px;border-radius: 3px;border: none;}
+      select{width: 300px;height: 39px; background-color:whitesmoke;padding: 5px 10px;font-family: sans-serif;font-weight: lighter;font-size:13.5px;border: none;}
+      label{font-size:12px;font-weight:lighter; font-family:Georgia}
+      button{width: 310px;height: 35px;background-color: rgb(108, 33, 179);border: none;
+        font-size: 13px;font:medium;font-family: Arial;font-weight: bold;color: white;text-align: center;
+      border-top-left-radius: 5px;border-top-right-radius: 5px; border-bottom-right-radius: 5px;
+    }
+    #footer{margin-top:0px;}
+    #line3{font-size: 23px;font-family:Verdana,;font-weight:bold;margin-bottom: 0px;color:rgb(2, 31, 83);padding: 2px 5px 5px 5px;}
+ #line4 {font-size:15px;font-family:Times New Roman;font-weight:lighter;color:rgba(2, 34, 83, 0.856);margin-top: 0;}
+
+    </style>
+</head>
+  <body>
+    <div id="regframe">
+        <img src="./images/piggyvest-logo.svg" width="200">
+        <div class="reg1">
+            <div id="regheader">
+        <div id="line3">Create a Secure Account</div>
+        <div id="line4">Welcome to the future of Savings & Investments</div>
+        </div>
+        <div class="reg2">
+        <form id="inside">
+            <label for="fullname">Full Name</label> <br> <input type="text" id="fullname" name="fullname"
+               value="" placeholder="Full Name"> <br> <br>
+             <label for="email">Email Address</Address></label><br> <input type="mail" id="email" name="email"
+                 value="" placeholder="Email Address"> <br> <br>
+            <label for="tel">Phone Number</label><br> <input type="tel" id="tel" name="tel" value=""
+                placeholder="Phone Number"> <br> <br>
+            <label for="password">Password</label><br> <input type="password" class="pwd" name="pwd" value=""
+                placeholder="Password"> <br> <br>
+            <label for="code">Referrer phone or Promo Code (Optional)</label><br> <input type="number" id="code"
+           name="pwd" value="" placeholder="Referrer Phone or Code"> <br> <br>
+            <label for="from">How Did You Hear About Us?</label><br>
+          <select id="how" name="how""> <option value="Click to Select">Click to Select</option> <option value="Whatsapp">Whatsapp</option> <option value="Facebook">Facebook</option><option value="Instagram">Instagram</option> <option value="Twitter">Twitter</option> <option value="Friends/Families/Co-Worker Referral">Friends/Families/Co-Woeker Referral</option>
+            <option value="Google Search">Google Search</option> <option value="Local Newspaper">Local Newspaper</option> <option value="At an Event">At an Event</option> <option value="Online Blog">Online Blog</option> <option value="Others">Others</option>
+           </select> <br> <br>
+        </div>
+           <button type="submit" class="regbuuton">CREATE AN ACCOUNT</button>
+         </form>
+         </div>
+         <br><div id="footer"><h5>Already have an account? Login</h5></div>
+    </div>
+  </body>
+</html>

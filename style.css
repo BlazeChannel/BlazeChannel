@@ -1,0 +1,51 @@
+ body {
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        text-align: center;
+        background-color: rgb(12, 12, 49);
+        margin:2% 5%; box-sizing: border-box;}                                                                                    
+img {margin-bottom:30px; margin-left: 1% }                                            
+#frame {position: static;
+        display: flex;
+        flex-direction: column;
+       text-align: center;justify-items: left;justify-content:space-between;
+       align-items: center;
+        margin-left: 0%;
+        margin-top: 0%; }
+.log2 { background-color: white;
+        padding: 20px 30px 15px 35px;
+         border-top-left-radius: 18px;
+          border-top-right-radius: 18px; border-bottom-right-radius: 18px; }
+.log3{padding-bottom: 0.1px; text-align:left;margin-bottom:0.1px; }
+.header {text-align: center;}                                               
+#footer {margin-top: 10px;padding-top: 0%;color: white;font-weight: lighter;font-size: medium;}
+#regframe {position:static;display: flex;
+           flex-direction: column;text-align: center;
+           justify-items: left;justify-content:space-between;
+           align-items: center;margin-left: 1%;padding-top: 0%; }
+#regheader{padding-top: 0;}
+.reg1{font-size: 20px;
+      background-color: white;padding:25px 0px 20px 2px;
+      border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; }
+.reg2{text-align: left;padding: 15px 35px 20px 35px;}
+#line1 {font-size: 27px;font-family:serif;font-weight:normal;margin-bottom: 0px;color:rgb(2, 31, 83);padding: 2px 5px 5px 5px;}
+#line2 {font-size:15px;font-family:serif;font-weight:300;color:rgba(2, 34, 83, 0.856);margin-top: 0;}
+#inside {margin-bottom: 0%;padding-left: 0%;justify-items: left;}
+#pwd, #reset {margin-top: 5px;
+         width: 250px;height: 30px;
+         border-radius:3px;background-color:whitesmoke;
+         border-color: whitesmoke;padding: 5px 10px;border-radius: 3px;border: none;}
+.midlog {font-size:12px;font-weight:lighter; font-family:Georgia}
+.logbutton {font-size: 14px;color:white;font-family: Arial;font-weight: bold;
+     text-align: center;background-color: rgb(108, 33, 179);
+      width: 275px; height: 37px;
+      margin-top: 0px;margin-bottom: 5px; border-top-left-radius: 5px;border: none;
+      border-top-right-radius: 5px; border-bottom-right-radius: 5px;}
+#fogframe{position: static;display: flex;
+   flex-direction: column;
+   align-items: center;margin-left: 1%;padding-top: 0%; }
+#fog1{font-size: 20px;
+   background-color: white;padding:10px 70px 50px 70px;
+   border-top-left-radius: 15px; border-top-right-radius: 15px; border-bottom-right-radius: 15px; }
+#fog2{text-align:left;;margin-bottom:0.1px;justify-items: left;padding-left: 0pt;}
+#fog3{}
+#fogfooter{margin-top: 10px;padding-top: 0%;color: white;font-weight: lighter;font-size: medium}
