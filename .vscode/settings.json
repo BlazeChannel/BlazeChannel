@@ -1,3 +1,5 @@
 {
-    "typescript.referencesCodeLens.showOnAllFunctions": true
+    "typescript.referencesCodeLens.showOnAllFunctions": true,
+    "livePreview.defaultPreviewPath": "/dashboard.html",
+    "editor.suggest.preview": true
 }
