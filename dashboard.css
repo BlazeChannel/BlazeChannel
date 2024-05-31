@@ -12,7 +12,7 @@ justify-items: center;
 }
 .margin{
     margin: 0 auto;
-    max-width:1200px;
+    max-width:1300px;
 }
 .navigation-content {
     font-family: Jakarta,sans-serif;
@@ -166,7 +166,8 @@ justify-items: center;
 .animated-image {
     width: 400px; 
     height: 450px;
-    display: block; border-radius: 20px;
+    display: block; 
+    border-radius: 20px;
 }
 .text-top-left, .text-top-right, .text-bottom-left, .text-bottom-right, .text-middle-bottom {
     position: absolute;       
@@ -212,29 +213,92 @@ justify-items: center;
     font-size: 20px;
 }
 .section3 {
-    margin:5rem auto;
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 60px;
+    gap: 50px;    
+    margin: 30px auto;
+    max-width: 1200px;
 }
 .cell2, .cell3, .cell4, .cell5, .cell6 {
-    background-color: white;
-    display: block;
+    background-color: #ffffff;
+    border-radius: 20px;
     position: relative;
-    /* padding: 20px 100px 250px 35px; */
-    /* margin: 2rem auto; */
-    display: block;
-    border-radius: 20px; font-family: Jakarta,sans-serif;font-size: 2rem;}
-.cell1{font-family: Jakarta,sans-serif;
-    font-size: 2rem;
-    /* padding: 20px 30px 250px 35px; */
-    /* margin: 20px;  */
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    min-height: 550px;
+    width: 550px;
+    font-family: Jakarta,sans-serif;
+    cursor: pointer;
+    margin: 0;
+    display: inline-block;
+}
+.cell1{
+    border-radius: 20px;
+    font-family: Jakarta,sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+.section3 div >h1 {
+    font-size: 50px;
+}
+.section3 div > small{
+    font-size: 29px; font-weight: lighter;
+}
+.section3 div > a {
+    font-size: 20px; 
+    position: absolute;     
+    bottom: 50px;
+}
+.section3 img {
+    bottom: 0;
+    right: 50px;
+    position: absolute;
+    animation: translate 3s infinite;
+}
+@keyframes translate {
+    0% { opacity: 0;
+        translate: 10px 20px -120px;
+     }
+     55% { opacity: 0;
+        translate: 80px 100px ;        
+     }
+     75% {opacity: 1;
+        translate: -9px 0;
+    }
+    100% { opacity: 1; 
+        translate: -10px 0 ;
+    }
+}
+.cell2:hover {
+    background-color: #0f60d6;
+    color: white;
+    display: block; 
+}
+.cell3:hover{
+    background-color:#2295f2;
+    color: whitesmoke;
+    display: block; 
+}
+.cell4:hover{
+    background-color: #e5489b;
+    color: white;
     display: block;
 }
-.cell2-content a, .cell3-content a, .cell4-content a, .cell5-content a, .cell6-content a{
-    font-size: 15px;
+.cell5:hover{
+    background-color: #e5489b;
+    color: white;
+    display: block;
+}
+.cell6:hover {
+    background-color:#0c1825;
+    color: white;
+    display: block; 
 }
 
-.flex-direction-row1{display: flex;}
-.flex-direction-row2{display: flex; }
-.flex-direction-row3{display: flex;}
 .middle-full-width{
 font-family: Jakarta,sans-serif;
 color: #3d4f60;
@@ -301,13 +365,12 @@ margin-bottom: 0;
     display: inline-flexbox; 
     margin-left: -20px;   
     cursor: pointer;
-    transition: 2s ease;
+    transition: transform 0.3s ease-in-out;
     z-index: 1;
     border: 4px solid #fff;
 }
 .profile:hover{
-    z-index: -12;
-    border: 4px solid #f5f5f5
+    transform: scale(1.2);
 }
 .section5-button{
     color:#122231;
@@ -317,7 +380,7 @@ margin-bottom: 0;
     text-align: center;
     border-radius: 12px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: 3s ease-in-out;
+    transition: 2s ease-in-out;
     font-weight: 800;
     position: relative;
     cursor: pointer;
@@ -331,7 +394,7 @@ margin-bottom: 0;
 .section5-button a, a:hover {
     text-decoration: none;
     cursor: pointer;
-    color: #fff;
+    color:#122231;
     top: -5px;
 }
 .section5{
@@ -391,16 +454,3 @@ footer{
     text-align: left;
     color: #3d4f60;
 }
-
-/* font-family: Jakarta,sans-serif;
-color: #3d4f60;
-line-height: 27.2px;
-font-size: 16px;
-letter-spacing: -.03em;
--webkit-font-smoothing: antialiased;
-text-align: center!important;
-box-sizing: border-box;
-background: #fff;
-padding: 6rem 1rem 4rem;
-margin-bottom: 0; */
-
