@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -19,18 +20,29 @@
       </div>
       <div class="reg2">
         <form id="inside">
-          <label for="fullname">Full Name</label> <br>
-          <input type="text" id="fullname" name="fullname" value="" placeholder="Full Name"> <br> <br>
-          <label for="email">Email Address</Address></label><br>
-          <input type="mail" id="email" name="email" value="" placeholder="Email Address"> <br> <br>
-          <label for="tel">Phone Number</label><br>
-          <input type="tel" id="tel" name="tel" value="" placeholder="Phone Number"> <br> <br>
+          <label for="fullname">Full Name</label> <span class="name-error"></span><br>
+          <input type="text" id="fullname" name="fullname" value="" placeholder="Full Name" oninput="nameValid()">
+
+          <br> <br>
+          <label for="email">Email Address</Address></label> <span class="email-error"> </span><br>
+          <input type="mail" id="email" name="email" value="" placeholder="Email Address" oninput="emailValid()"> <br>
+
+          <br>
+          <label for="tel">Phone Number</label> <span class="phone-error"></span><br>
+          <input type="tel" id="tel" name="tel" value="" placeholder="Phone Number" oninput="phoneValid()">
+          <br> <br>
           <label for="password">Password</label><br>
-          <input type="password" id="password" name="pwd" value="" placeholder="Password"> <br> <br>
+          <input type="password" id="password" name="pwd" value="" placeholder="Password" oninput="passwordValid()">
+          <br>
+          <span class="password-error"> </span>
+          <br>
           <label for="code">Referrer phone or Promo Code (Optional)</label><br>
-          <input type="number" id="code" name="pwd" value="" placeholder="Referrer Phone or Code"> <br> <br>
+          <input type="number" id="code" name="pwd" value="" placeholder="Referrer Phone or Code">
+
+          <br> <br>
           <label for="from">How Did You Hear About Us?</label><br>
-          <select id="how" name="how""> <option value=" Click to Select">Click to Select</option>
+          <select id="how" name="how""> 
+            <option value=" Click to Select">Click to Select</option>
             <option value="Whatsapp">Whatsapp</option>
             <option value="Facebook">Facebook</option>
             <option value="Instagram">Instagram</option>
@@ -43,14 +55,17 @@
             <option value="Others">Others</option>
           </select> <br> <br>
       </div>
-      <button type="submit" class="regbutton">CREATE AN ACCOUNT</button>
+      <button type="submit" class="regbutton" onclick= "return accountValid()">CREATE AN ACCOUNT</button> <br>
+      <span class="submit-error"> </span>
       </form>
     </div>
-    <br>
+
     <div id="regfooter">
       <h5> <a href="login.html"> Already have an account? Login </a> </h5>
+
     </div>
   </div>
+  <script src="script.js"> </script>
 </body>
 
 </html>

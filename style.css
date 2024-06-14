@@ -90,7 +90,7 @@
 
  /*CSS FOR REGISTER */
  #regframe {
-    position: static;
+    position: relative;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -113,6 +113,7 @@
  .reg2 {
     text-align: left;
     padding: 15px 35px 20px 35px;
+    position: relative;
  }
 
  #fullname, #email, #tel, #password, #code, #forgotmail {
@@ -122,7 +123,6 @@
     padding: 5px 10px;
     border-radius: 3px;
     border: none;
-    cursor: pointer;
  }
 
  select {
@@ -141,10 +141,10 @@
     font-size: 12px;
     font-weight: lighter;
     font-family: Georgia;
-    color: rgb(108, 39, 90)
+    color: rgb(108, 39, 90);
  }
 
- .regbutton, .fogbutton {
+ .regbutton {
     width: 310px;
     height: 35px;
     background-color: rgb(108, 33, 179);
@@ -160,7 +160,6 @@
     border-bottom-right-radius: 5px;
     cursor: pointer;
  }
-
  #line3 {
     font-size: 23px;
     font-family: Verdana;
@@ -193,6 +192,17 @@
    text-decoration: none;
    color: white;
  }
+
+ #regframe span {
+   position: ;
+   color: red;
+   font-size: 13px;
+   margin-bottom:5px ;
+   margin-right: 15px;
+   float:right;
+ }
+ 
+
 
  /* CSS FOR  FORGOTTEN */
  #fogframe {
@@ -251,6 +261,19 @@
     border: none;
  }
  .fogbutton {
+   width: 310px;
+    height: 35px;
+    background-color: rgb(108, 33, 179);
+    border: none;
+    font-size: 13px;
+    font: medium;
+    font-family: Arial;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     cursor: pointer;
  }
  #fogfooter a {
